@@ -8,25 +8,33 @@ const total = document.querySelector(".totalPriceUser");
 
 btnPlusTop.addEventListener("click", () => {
   counter1.innerText++;
-  total.innerText = `$${
-    +counter1.innerText * 54.99 + counter2.innerText * 74.99 + 19
-  }`;
+  total.innerText = `$${(
+    +counter1.innerText * 54.99 +
+    counter2.innerText * 74.99 +
+    19
+  ).toFixed(2)}`;
 });
 btnMinusTop.addEventListener("click", () => {
   counter1.innerText <= 0 ? "0" : counter1.innerText--;
-  total.innerText = `$${
-    +counter1.innerText * 54.99 + counter2.innerText * 74.99 + 19
-  }`;
+  total.innerText = `$${(
+    +counter1.innerText * 54.99 +
+    counter2.innerText * 74.99 +
+    19
+  ).toFixed(2)}`;
 });
 btnPlusBottom.addEventListener("click", () => {
   counter2.innerText++;
-  total.innerText = `$${
-    +counter1.innerText * 54.99 + counter2.innerText * 74.99 + 19
-  } `;
+  total.innerText = `$${(
+    +counter1.innerText * 54.99 +
+    counter2.innerText * 74.99 +
+    19
+  ).toFixed(2)} `;
 });
 btnMinusBottom.addEventListener("click", () => {
   counter2.innerText <= 0 ? "0" : counter2.innerText--;
-  total.innerText = `$${
-    +counter1.innerText * 54.99 + counter2.innerText * 74.99 + 19
-  } `;
+  total.innerText = `$${(
+    +counter1.innerText * 54.99 +
+    counter2.innerText * 74.99 +
+    19
+  ).toFixed(2)} `;
 });
